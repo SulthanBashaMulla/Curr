@@ -9,53 +9,64 @@
 /* 3️⃣ BASE THEME TOKENS */
 @layer base {
   :root {
-/* 🌾 Cream background (#e5e0d8) */
---background: 40 20% 88%;
---foreground: 20 15% 12%;
+  /* 🌾 Backgrounds */
+  --background: 40 20% 88%;        /* #E5E0D8 */
+  --foreground: 0 0% 12%;
 
-/* Cards */
---card: 0 0% 100%;
---card-foreground: 20 15% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 12%;
 
---popover: 0 0% 100%;
---popover-foreground: 20 15% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 12%;
 
-/* Brand red */
---primary: 0 72% 51%;
---primary-foreground: 0 0% 98%;
+  /* 🔴 Brand Reds */
+  --primary: 0 100% 25%;           /* #800000 */
+  --primary-foreground: 0 0% 98%;
 
-/* Cream UI layers */
---secondary: 40 18% 92%;
---secondary-foreground: 20 15% 18%;
+  --accent: 0 100% 35%;            /* #B30000 */
+  --accent-foreground: 0 0% 98%;
 
---muted: 40 15% 94%;
---muted-foreground: 20 10% 42%;
+  /* ✨ Gold highlight */
+  --ring: 43 74% 52%;              /* #D4AF37 */
 
-/* Accent red (lighter) */
---accent: 0 65% 45%;
---accent-foreground: 0 0% 98%;
+  /* 🧁 UI neutrals */
+  --secondary: 40 18% 92%;
+  --secondary-foreground: 0 0% 18%;
 
-/* Borders & inputs */
---border: 40 15% 82%;
---input: 40 15% 82%;
---ring: 0 72% 51%;
+  --muted: 40 15% 94%;
+  --muted-foreground: 0 0% 45%;
 
-/* Gradients */
---gradient-primary: linear-gradient(
-  135deg,
-  hsl(0, 72%, 51%) 0%,
-  hsl(0, 70%, 60%) 100%
-);
+  /* 🧱 Borders & inputs */
+  --border: 40 15% 82%;
+  --input: 40 15% 82%;
 
---gradient-dark: linear-gradient(
-  180deg,
-  hsl(40, 20%, 88%) 0%,
-  hsl(40, 18%, 92%) 100%
-);
+  --destructive: 0 100% 35%;
+  --destructive-foreground: 0 0% 98%;
 
-/* Shadows */
---shadow-glow: 0 0 22px hsl(0, 72%, 51%, 0.22);
---shadow-card: 0 14px 30px hsl(20, 20%, 10%, 0.12);
+  --radius: 0.5rem;
+
+  /* 🌈 Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(0, 100%, 25%) 0%,   /* #800000 */
+    hsl(0, 100%, 35%) 100%  /* #B30000 */
+  );
+
+  --gradient-dark: linear-gradient(
+    180deg,
+    hsl(40, 20%, 88%) 0%,   /* #E5E0D8 */
+    hsl(40, 18%, 92%) 100%
+  );
+
+  --gradient-overlay: linear-gradient(
+    180deg,
+    transparent 0%,
+    hsl(40, 20%, 88%) 100%
+  );
+
+  /* ☁️ Shadows (luxury soft) */
+  --shadow-glow: 0 0 20px hsl(43, 74%, 52%, 0.35); /* gold glow */
+  --shadow-card: 0 14px 30px hsl(0, 0%, 0%, 0.12);
 }
 
   .dark {
